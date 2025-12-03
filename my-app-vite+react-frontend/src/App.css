@@ -1,0 +1,75 @@
+#root {
+  width: 100%;
+  margin: auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 6em;
+  justify-content: center;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: dro p-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.clock-card {
+  position: fixed;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+/* Fullscreen background */
+.landing-container {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/assets/LOVE.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Blurred overlay box */
+.landing-content {
+  background: rgba(255, 255, 255, 0.1); /* transparent glass effect */
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  width: 350px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6);
+}
+
+.buttons {
+  margin-top: 40px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
