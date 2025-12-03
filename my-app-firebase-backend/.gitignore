@@ -2,3 +2,4 @@ serviceAccountKey.json
 /__pycache__
 /.mypy_cache
 /venv
+/node_modules
